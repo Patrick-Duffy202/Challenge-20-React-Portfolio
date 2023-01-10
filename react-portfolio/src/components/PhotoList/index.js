@@ -7,34 +7,34 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-        name: 'Guy on chair',
+        name: 'Find Your Fit',
         category: 'projects',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        "https://ancient-citadel-80522.herokuapp.com/"
       },
       {
         name: 'Lightwall',
         category: 'projects',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        "https://videohive.net/item/light-wall-v2/3971280"
       },
       {
         name: 'Calculator',
         category: 'projects',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        "https://www.online-calculator.com/full-screen-calculator/"
       },
       {
         name: 'Run Buddy',
         category: 'projects',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        "https://patrick-duffy202.github.io/run-buddy/"
       },
       {
         name: 'Tempo Run',
         category: 'projects',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        "https://amaragh.github.io/tempo-run-songfinder/"
       }
   ]);
 
@@ -53,7 +53,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-            src={require(`../../assets/small/${category}/${i}.jpg`).default}
+            src={require(`../../assets/small/${category}/${i}.jpg`)}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
