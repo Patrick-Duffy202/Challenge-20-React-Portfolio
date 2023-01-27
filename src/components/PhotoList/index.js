@@ -35,6 +35,12 @@ const PhotoList = ({ category }) => {
         category: 'projects',
         description:
         "https://amaragh.github.io/tempo-run-songfinder/"
+      },
+      {
+        name: 'Oink!',
+        category: 'projects',
+        description:
+        "https://guarded-gorge-65763.herokuapp.com/"
       }
   ]);
 
